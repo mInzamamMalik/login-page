@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-size: 32px;
+            font-family: "Segoe UI Light", "Segoe UI Semilight", "Segoe UI", serif;
+        }
+        div>*{
+            margin: 12px
+        }
+        div{
+            width: 49%;
+            height: 900px;
+            margin: 1px;
+            float: left;
+            border: 1px solid black;
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<div id="signup">
+    <h1>Signup</h1>   <hr /><br />
+
+    <label for="fname">First name:</label>  <br />
+    <input type="text" id="fname"/>         <br />
+
+    <label for="lname">Last name:</label>    <br />
+    <input type="text" id="lname"/>         <br />
+
+    <label for="email">Email address:</label> <br />
+    <input type="email" id="email"/>         <br />
+
+    <label for="pass">Password:</label>      <br />
+    <input type="password" id="pass"/>      <br />
+
+    <button id="submit" onclick="savedata();">Submit</button>      <br />
+
+
+</div>
+<div id="login">
+<h1>Login</h1> <hr /><br />
+
+    <label for="loginusername">Username:</label> <br />
+    <input type="text" id="loginusername">      <br />
+
+    <label for="loginpass">Password:</label>     <br />
+    <input type="password" id="loginpass">      <br />
+
+    <button id="login" onclick="chkdata()">Login</button>
+
+
+
+</div>
+
+
+<script>
+    function savedata(){
+        data =[]
+        data[1] = document.getElementById("fname").value;
+        data[2] = document.getElementById("lname").value;
+        data[3] = document.getElementById("email").value;
+        data[4] = document.getElementById("pass").value;
+        console.log(data);
+    }
+
+
+</script>
+</body>
+</html>
